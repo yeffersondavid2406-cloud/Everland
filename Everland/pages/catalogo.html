@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de calzado Everland - 15 estilos de sneakers urbanos, casuales, deportivos y ediciones limitadas en Barranquilla">
+    <title>Catálogo · Everland · 15 Estilos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- NAVBAR COMPLETO -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">👟 EVERLAND</a>
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                 <li class="nav-item"><a href="/index.html" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="quienes-somos.html" class="nav-link">Quiénes somos</a></li>
+                <li class="nav-item"><a href="nicho.html" class="nav-link">Nicho</a></li>
+                <li class="nav-item"><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                <li class="nav-item"><a href="estrategias.html" class="nav-link">Estrategias</a></li>
+                <li class="nav-item"><a href="historia.html" class="nav-link">Historia</a></li>
+                <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="page-container">
+        <h1 class="page-title">Nuestro Catálogo</h1>
+        
+        <div class="contador-productos">
+            <span>15</span> estilos urbanos para cada paso
+        </div>
+
+        <!-- BOTONES DE CATEGORIAS -->
+        <div class="categorias">
+            <button class="activo" onclick="filtrar('todos')">Todos (15)</button>
+            <button onclick="filtrar('urbanos')">Sneakers Urbanos (5)</button>
+            <button onclick="filtrar('casuales')">Casuales (4)</button>
+            <button onclick="filtrar('deportivos')">Deportivos (3)</button>
+            <button onclick="filtrar('limitados')">Edición Limitada (3)</button>
+        </div>
+
+        <!-- PRODUCTOS - 15 ZAPATOS -->
+        <div class="catalogo-grid" id="catalogo-container">
+            
+            <!-- 1. URBANO - Nike ZoomX -->
+            <div class="producto urbanos">
+                <div class="producto-badge nuevo">NUEVO</div>
+                <img src="../assets/Nike ZoomX.jpeg" alt="Nike ZoomX - Sneaker urbano">
+                <div class="producto-info">
+                    <h3>Nike ZoomX</h3>
+                    <p>Sneaker urbano ultraligero</p>
+                    <span>$120.000</span>
+                </div>
+            </div>
+
+            <!-- 2. CASUAL - Adidas Superstar -->
+            <div class="producto casuales">
+                <img src="../assets/Adidas Superstar.jpeg" alt="Adidas Superstar - Estilo clásico">
+                <div class="producto-info">
+                    <h3>Adidas Superstar</h3>
+                    <p>Clásico e icónico</p>
+                    <span>$130.000</span>
+                </div>
+            </div>
+
+            <!-- 3. DEPORTIVO - Nike TN Morado -->
+            <div class="producto deportivos">
+                <img src="../assets/Nike TN Morado.jpeg" alt="Nike TN Morado - Rendimiento deportivo">
+                <div class="producto-info">
+                    <h3>Nike TN Morado</h3>
+                    <p>Máximo rendimiento</p>
+                    <span>$140.000</span>
+                </div>
+            </div>
+
+            <!-- 4. LIMITADO - Nike TN Blanco -->
+            <div class="producto limitados">
+                <div class="producto-badge">EXCLUSIVO</div>
+                <img src="../assets/Nike TN Blanco.jpeg" alt="Nike TN Blanco - Edición especial">
+                <div class="producto-info">
+                    <h3>Nike TN Blanco</h3>
+                    <p>Edición limitada</p>
+                    <span>$150.000</span>
+                </div>
+            </div>
+
+            <!-- 5. URBANO - Air Jordan 1 Mid -->
+            <div class="producto urbanos">
+                <img src="../assets/Air Jordan 1 Mid.jpeg" alt="Air Jordan 1 Mid - Icono urbano">
+                <div class="producto-info">
+                    <h3>Air Jordan 1 Mid</h3>
+                    <p>Icono del streetwear</p>
+                    <span>$180.000</span>
+                </div>
+            </div>
+
+            <!-- 6. URBANO - New Balance 550 -->
+            <div class="producto urbanos">
+                <img src="../assets/new-balance-550.jpeg" alt="New Balance 550 - Estilo retro">
+                <div class="producto-info">
+                    <h3>New Balance 550</h3>
+                    <p>Estilo retro urbano</p>
+                    <span>$135.000</span>
+                </div>
+            </div>
+
+            <!-- 7. CASUAL - Vans Old Skool -->
+            <div class="producto casuales">
+                <img src="../assets/Vans Old Skool.jpeg" alt="Vans Old Skool - Casual clásico">
+                <div class="producto-info">
+                    <h3>Vans Old Skool</h3>
+                    <p>Skate style</p>
+                    <span>$110.000</span>
+                </div>
+            </div>
+
+            <!-- 8. DEPORTIVO - Adidas Ultraboost -->
+            <div class="producto deportivos">
+                <div class="producto-badge nuevo">NUEVO</div>
+                <img src="../assets/adidas-ultraboost.jpeg" alt="Adidas Ultraboost - Confort total">
+                <div class="producto-info">
+                    <h3>Adidas Ultraboost</h3>
+                    <p>Comodidad suprema</p>
+                    <span>$160.000</span>
+                </div>
+            </div>
+
+            <!-- 9. LIMITADO - Yeezy 350 -->
+            <div class="producto limitados">
+                <img src="../assets/yeezy-350.jpeg" alt="Yeezy 350 - Edición especial">
+                <div class="producto-info">
+                    <h3>Yeezy 350</h3>
+                    <p>Drop exclusivo</p>
+                    <span>$220.000</span>
+                </div>
+            </div>
+
+            <!-- 10. URBANO - Puma Suede -->
+            <div class="producto urbanos">
+                <img src="../assets/puma-suede.jpeg" alt="Puma Suede - Clásico urbano">
+                <div class="producto-info">
+                    <h3>Puma Suede</h3>
+                    <p>Clásico urbano</p>
+                    <span>$115.000</span>
+                </div>
+            </div>
+
+            <!-- 11. CASUAL - Converse Chuck Taylor -->
+            <div class="producto casuales">
+                <img src="../assets/converse-chuck.jpeg" alt="Converse Chuck Taylor - Casual icónico">
+                <div class="producto-info">
+                    <h3>Converse Chuck</h3>
+                    <p>Icono casual</p>
+                    <span>$105.000</span>
+                </div>
+            </div>
+
+            <!-- 12. DEPORTIVO - Reebok Classic -->
+            <div class="producto deportivos">
+                <img src="../assets/Reebok Classic.jpeg" alt="Reebok Classic - Deportivo retro">
+                <div class="producto-info">
+                    <h3>Reebok Classic</h3>
+                    <p>Deportivo retro</p>
+                    <span>$125.000</span>
+                </div>
+            </div>
+
+            <!-- 13. LIMITADO - Nike SB Dunk Low -->
+            <div class="producto limitados">
+                <div class="producto-badge">EXCLUSIVO</div>
+                <img src="../assets/nike-sb-dunk.jpeg" alt="Nike SB Dunk Low - Edición limitada">
+                <div class="producto-info">
+                    <h3>Nike SB Dunk Low</h3>
+                    <p>Edición especial</p>
+                    <span>$190.000</span>
+                </div>
+            </div>
+
+            <!-- 14. URBANO - Fila Disruptor -->
+            <div class="producto urbanos">
+                <img src="../assets/fila-disruptor.jpeg" alt="Fila Disruptor - Urban bold">
+                <div class="producto-info">
+                    <h3>Fila Disruptor</h3>
+                    <p>Estilo audaz</p>
+                    <span>$125.000</span>
+                </div>
+            </div>
+
+            <!-- 15. CASUAL - Lacoste L.12.12 -->
+            <div class="producto casuales">
+                <img src="../assets/lacoste-l1212.jpeg" alt="Lacoste L.12.12 - Casual elegante">
+                <div class="producto-info">
+                    <h3>Lacoste L.12.12</h3>
+                    <p>Elegancia casual</p>
+                    <span>$145.000</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTADOR POR CATEGORÍA -->
+        <div style="text-align: center; margin: 20px 0; color: #666;">
+            <i class="fas fa-shoe-prints"></i> 
+            <span id="productos-visibles">15</span> productos mostrados
+        </div>
+
+        <!-- BOTÓN DE WHATSAPP -->
+        <div class="cta-catalogo">
+            <a href="https://wa.me/573000000000" class="btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i> Comprar por WhatsApp
+            </a>
+        </div>
+    </main>
+
+    <!-- FOOTER COMPLETO -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Everland · Calzado Urbano</h3>
+                <p class="footer-mensaje">👟 Donde cada paso expresa tu estilo</p>
+                <p class="footer-ubicacion"><i class="fas fa-map-marker-alt"></i> Barranquilla, Colombia</p>
+            </div>
+            <div class="footer-contacto">
+                <h4>Contacto</h4>
+                <p><i class="fab fa-whatsapp"></i> WhatsApp</p>
+                <p><i class="fab fa-instagram"></i> @everland.co</p>
+                <p><i class="fab fa-facebook"></i> Everland Colombia</p>
+            </div>
+            <div class="footer-enlaces">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="catalogo.html">Catálogo</a></li>
+                    <li><a href="estrategias.html">Estrategias</a></li>
+                    <li><a href="historia.html">Nuestra historia</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2026 Everland · 15 estilos · Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/filtro.js"></script>
+</body>
+</html>

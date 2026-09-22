@@ -1,0 +1,75 @@
+/* ===== HISTORIA ===== */
+.historia-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.historia-timeline::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #ff3366;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 80px;
+    margin-bottom: 3rem;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: #ff3366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.timeline-content h3 {
+    color: #ff3366;
+    margin-bottom: 1rem;
+}
+
+
+.btn-wa, .btn-ig, .btn-fb {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+}
+
+.btn-wa {
+    background: #25D366;
+    color: #fff;
+}
+
+.btn-ig {
+    background: #E4405F;
+    color: #fff;
+}
+
+.btn-fb {
+    background: #1877F2;
+    color: #fff;
+}

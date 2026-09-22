@@ -1,0 +1,48 @@
+/* ===== ESTRATEGIAS ===== */
+.estrategias-destacadas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.estrategia-mega-card {
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.estrategia-mega-card .numero {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 5rem;
+    font-weight: 800;
+    color: rgba(255,51,102,0.1);
+    line-height: 1;
+}
+
+.estrategia-mega-card h2 {
+    color: #ff3366;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    position: relative;
+    z-index: 1;
+}
+
+.estrategia-detalle p {
+    margin-bottom: 1rem;
+    color: #666;
+    position: relative;
+    z-index: 1;
+}
+
+.estrategia-detalle .impacto {
+    background: #ff3366;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+}

@@ -1,0 +1,70 @@
+/* ===== NICHOS ===== */
+.nicho-destacado {
+    background: linear-gradient(135deg, #ff3366, #ff6b6b);
+    color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stat-circle {
+    text-align: center;
+}
+
+.stat-circle .stat-number {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1;
+}
+
+.stat-circle .stat-label {
+    color: rgba(255,255,255,0.9);
+    font-size: 1rem;
+}
+
+.nicho-descripcion .lead {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.tribu-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+}
+
+.tribu-card h2 {
+    color: #ff3366;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tribu-card h2 i {
+    font-size: 2rem;
+}
+
+.tribu-caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.tag {
+    background: #f0f0f0;
+    padding: 0.3rem 1rem;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #333;
+}
